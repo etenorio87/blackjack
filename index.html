@@ -22,22 +22,33 @@
         
         <main>
             <div class="toolbar">
-                <button type="button"  >New Game</button>
-                <button type="button"  >Get card</button>
-                <button type="button"  >Stop</button>
+                <button id="btn-new"  type="button" class="btn btn-primary" >New Game</button>
+                <button id="btn-card"  type="button" class="btn btn-secondary" >Get card</button>
+                <button id="btn-stop"  type="button" class="btn btn-danger" >Stop</button>
             </div>
 
             <div class="container cards-board">
-                <div>
-                    <h3>PLAYER 1 - <small>0</small></h3>
-                    
+                <div id="user-container">
+                    <h3><span id="usuario-nombre-ph">PLAYER 1</span> - <small>0</small></h3>
+                    <div id="user-cards" class="cards-container">
+                        <img class="gcard" src="assets/img/cards/grey_back.png" alt="card">
+
+
+
+
+
+                    </div>
                 </div>
 
-                <div>
+                <div id="cpu-container">
                     <h3>COMPUTER - <small>0</small></h3>
-                    
+                    <div id="cpu-cards" class="cards-container">
+                        <img class="gcard" src="assets/img/cards/grey_back.png" alt="card">
+                    </div>
                 </div>
             </div>
         </main>
+
+        <script src="app.js"></script>
     </body>
 </html>
